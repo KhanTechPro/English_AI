@@ -26,7 +26,8 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body>
+      {/* Apply font classes */}
+      <body className={`${geistSans.variable} ${geistMono.variable} font-sans`}>
         <Navbar />
         <main className="relative overflow-hidden">
           {children}
