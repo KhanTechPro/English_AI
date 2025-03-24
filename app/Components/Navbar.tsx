@@ -57,11 +57,11 @@ const Navbar = () => {
             </div>
           )}
 
-          <Link href="/" className="bg-green-300 px-6 py-2 rounded-md hover:bg-green-400 transition duration-300">
+          <Link href="/login" className="bg-green-300 px-6 py-2 rounded-md hover:bg-green-400 transition duration-300">
             Log In
           </Link>
 
-          <Link href="/">Register</Link>
+          <Link href="/register">Register</Link>
         </div>
 
         {/* Mobile Menu Button */}
