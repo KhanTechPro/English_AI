@@ -1,2 +1,46 @@
 @import "tailwindcss";
 
+:root {
+    --main: rgba(185, 255, 102, 1);
+    --dark: rgba(25, 26, 35, 1);
+    --light: rgba(243, 243, 243, 1);
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.color-main {
+    color: var(--main);
+}
+
+.color-dark {
+    color: var(--dark);
+}
+
+.color-light {
+    color: var(--light);
+}
+
+.bg-main {
+    background-color: var(--main);
+}
+
+.bg-dark {
+    background-color: var(--dark);
+}
+
+.bg-light {
+    background-color: var(--light);
+}
+
+.btn-register {
+    background-color: var(--main);
+    cursor: pointer;
+}
+
+.btn-register:hover {
+    background-color: rgb(198, 249, 136);
+}

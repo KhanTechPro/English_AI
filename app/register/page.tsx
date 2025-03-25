@@ -1,15 +1,17 @@
-
+import Image from 'next/image';
+import bgAuth from '../../public/bg-auth.jpg';
 
 const page = () => {
 
 
     return (
         <div>
-            <div className="flex min-h-full flex-1 flex-col justify-center items-center px-6 py-12 lg:px-8">
-                <div className="border w-[450px] pb-10">
+            <div className="flex min-h-screen flex-1 flex-col justify-center items-center px-6 py-12 lg:px-8 relative">
+                <Image src={bgAuth} alt="Background" className="w-full h-full absolute z-0 blur-xs hover:blur-none transition" />
+                <div className="border rounded bg-light w-[450px] pb-10 z-10">
                     <div className="sm:mx-auto sm:w-full sm:max-w-sm">
-                        <h2 className="mt-10 text-center text-2xl/9 font-bold tracking-tight text-gray-900">
-                            Register to your account
+                        <h2 className="mt-10 text-center text-2xl/9 tracking-tight text-gray-900">
+                            <span className="color-main font-bold">Register</span>  to your account
                         </h2>
                     </div>
 
@@ -20,12 +22,14 @@ const page = () => {
                                     English level
                                 </label>
                                 <select id="englishLevel" defaultValue="a1" className="border rounded px-2 py-1 ">
-                                    <option value="a1">A1</option>
-                                    <option value="a2">A2</option>
-                                    <option value="b1">B1</option>
-                                    <option value="b2">B2</option>
-                                    <option value="c1">C1</option>
-                                    <option value="c2">C2</option>
+                                    <option value="none">No Knowledge</option>
+                                    <option value="basic">Basic (Amateur)</option>
+                                    <option value="a1">A1 (Beginner)</option>
+                                    <option value="a2">A2 (Elementary)</option>
+                                    <option value="b1">B1 (Intermediate)</option>
+                                    <option value="b2">B2 (Upper-Intermediate)</option>
+                                    <option value="c1">C1 (Advanced)</option>
+                                    <option value="c2">C2 (Proficient)</option>
                                 </select>
                             </div>
 
@@ -66,11 +70,6 @@ const page = () => {
                                     <label htmlFor="password" className="block text-sm/6 font-medium text-gray-900">
                                         Password
                                     </label>
-                                    <div className="text-sm">
-                                        <a href="#" className="font-semibold text-indigo-600 hover:text-indigo-500">
-                                            Forgot password?
-                                        </a>
-                                    </div>
                                 </div>
                                 <div className="mt-2">
                                     <input
@@ -87,7 +86,7 @@ const page = () => {
                             <div>
                                 <button
                                     type="submit"
-                                    className="flex w-full justify-center rounded-md bg-indigo-600 px-3 py-1.5 text-sm/6 font-semibold text-white shadow-xs hover:bg-indigo-500 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+                                    className="flex w-full justify-center rounded-md px-3 py-1.5 text-sm/6 font-medium text-gray-900 shadow-xs focus-visible:outline-2 focus-visible:outline-offset-2 btn-register"
                                 >
                                     Register
                                 </button>
