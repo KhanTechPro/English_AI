@@ -1,5 +1,5 @@
 import Image from 'next/image';
-import bgAuth from '../../public/bg-auth.jpg';
+import bgAuth from '../../public/bg-auth.png';
 
 const page = () => {
 

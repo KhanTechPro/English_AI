@@ -1,5 +1,5 @@
 import Image from 'next/image';
-import bgAuth from '../../public/bg-auth.jpg';
+import bgAuth from '../../public/bg-auth.png';
 
 const page = () => {
     return (
@@ -58,7 +58,7 @@ const page = () => {
                             <div>
                                 <button
                                     type="submit"
-                                    className="flex w-full justify-center rounded-md px-3 py-1.5 text-sm/6 font-medium text-gray-900 shadow-xs focus-visible:outline-2 focus-visible:outline-offset-2 btn-register"
+                                    className="flex w-full justify-center rounded-md px-3 py-1.5 text-sm/6 font-medium text-gray-900 shadow-xs focus-visible:outline-2 focus-visible:outline-offset-2 btn-register hover:shadow"
                                 >
                                     Sign In
                                 </button>
