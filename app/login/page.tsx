@@ -6,10 +6,10 @@ const page = () => {
         <div>
             <div className="flex min-h-screen flex-1 flex-col justify-center items-center px-6 py-12 lg:px-8 relative">
                 <Image src={bgAuth} alt="Background" className="w-full h-full absolute z-0 blur-xs hover:blur-none transition" />
-                <div className="border rounded bg-light w-[450px] pb-10 z-10">
+                <div className="rounded-xl bg-white shadow-2xl w-[450px] pb-10 z-10">
                     <div className="sm:mx-auto sm:w-full sm:max-w-sm">
                         <h2 className="mt-10 text-center text-2xl/9 tracking-tight text-gray-900">
-                            <span className="color-main font-bold">Sign In</span> to your account
+                            <span className="text-main font-bold">Sign In</span> to your account
                         </h2>
                     </div>
 
@@ -38,7 +38,7 @@ const page = () => {
                                         Password
                                     </label>
                                     <div className="text-sm">
-                                        <a href="#" className="font-semibold text-indigo-600 hover:text-indigo-500">
+                                        <a href="#" className="font-semibold text-main text-hover">
                                             Forgot password?
                                         </a>
                                     </div>
@@ -67,7 +67,7 @@ const page = () => {
 
                         <p className="mt-10 text-center text-sm/6 text-gray-500">
                             Don't have an account yet?{' '}
-                            <a href="/register" className="font-semibold text-indigo-600 hover:text-indigo-500">
+                            <a href="/register" className="font-semibold text-main text-hover">
                                 Get Register
                             </a>
                         </p>

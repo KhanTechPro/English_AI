@@ -1,17 +1,17 @@
 import Image from 'next/image';
 import bgAuth from '../../public/bg-auth.png';
 
-const page = () => {
+const page = () => {    
 
 
     return (
         <div>
             <div className="flex min-h-screen flex-1 flex-col justify-center items-center px-6 py-12 lg:px-8 relative">
                 <Image src={bgAuth} alt="Background" className="w-full h-full absolute z-0 blur-xs hover:blur-none transition" />
-                <div className="border rounded bg-light w-[450px] pb-10 z-10">
+                <div className="rounded-xl bg-white shadow-2xl w-[450px] pb-10 z-10">
                     <div className="sm:mx-auto sm:w-full sm:max-w-sm">
                         <h2 className="mt-10 text-center text-2xl/9 tracking-tight text-gray-900">
-                            <span className="color-main font-bold">Register</span>  to your account
+                            <span className="text-main font-bold">Register</span>  to your account
                         </h2>
                     </div>
 
@@ -21,7 +21,7 @@ const page = () => {
                                 <label htmlFor="englishLevel" className="block text-lg font-medium text-gray-900">
                                     English level
                                 </label>
-                                <select id="englishLevel" defaultValue="a1" className="border rounded px-2 py-1 ">
+                                <select id="englishLevel" defaultValue="a1" className="bg-main rounded px-2 py-1 ">
                                     <option value="none">No Knowledge</option>
                                     <option value="basic">Basic (Amateur)</option>
                                     <option value="a1">A1 (Beginner)</option>
@@ -95,7 +95,7 @@ const page = () => {
 
                         <p className="mt-10 text-center text-sm/6 text-gray-500">
                             Already have an account?{' '}
-                            <a href="/login" className="font-semibold text-indigo-600 hover:text-indigo-500">
+                            <a href="/login" className="font-semibold text-main text-hover">
                                 Get Sign In
                             </a>
                         </p>
