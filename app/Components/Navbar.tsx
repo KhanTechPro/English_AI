@@ -23,9 +23,9 @@ const Navbar = () => {
         {/* Desktop Navigation */}
         <div className="hidden md:flex items-center gap-8 font-semibold uppercase">
           <Link href="/" className='hover:text-green-300 duration-300 ease-in-out'>To Do</Link>
-          <Link href="/" className='hover:text-green-300 duration-300 ease-in-out'>Reading</Link>
-          <Link href="/" className='hover:text-green-300 duration-300 ease-in-out'>Listening</Link>
-          <Link href="/" className='hover:text-green-300 duration-300 ease-in-out'>Speaking</Link>
+          <Link href="/Pages/reading" className='hover:text-green-300 duration-300 ease-in-out'>Reading</Link>
+          <Link href="/Pages/listening" className='hover:text-green-300 duration-300 ease-in-out'>Listening</Link>
+          <Link href="/Pages/speaking" className='hover:text-green-300 duration-300 ease-in-out'>Speaking</Link>
           <Link href="/" className='hover:text-green-300 duration-300 ease-in-out'>Dictionary</Link>
         </div>
 
@@ -57,11 +57,11 @@ const Navbar = () => {
             </div>
           )}
 
-          <Link href="/login" className="bg-green-300 px-6 py-2 rounded-md hover:bg-green-400 transition duration-300">
+          <Link href="/Pages/login" className="bg-green-300 px-6 py-2 rounded-md hover:bg-green-400 transition duration-300">
             Log In
           </Link>
 
-          <Link href="/register">Register</Link>
+          <Link href="/Pages/register">Register</Link>
         </div>
 
         {/* Mobile Menu Button */}
@@ -112,7 +112,7 @@ const Navbar = () => {
             Log In
           </Link>
 
-          <Link href="/">Register</Link>
+          <Link href="/register">Register</Link>
         </div>
       )}
     </div>
